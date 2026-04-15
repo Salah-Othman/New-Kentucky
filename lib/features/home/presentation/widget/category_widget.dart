@@ -4,8 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:new_kentucky/core/networking/api_service.dart';
 import 'package:new_kentucky/core/theme/app_colors.dart';
-import 'package:new_kentucky/features/home/data/logic/category_cubit.dart';
-import 'package:new_kentucky/features/home/data/logic/category_state.dart';
+import 'package:new_kentucky/features/home/data/logic/category/category_cubit.dart';
+import 'package:new_kentucky/features/home/data/logic/category/category_state.dart';
 
 class CategoryWidget extends StatelessWidget {
   const CategoryWidget({super.key});
@@ -26,7 +26,6 @@ class CategoryWidget extends StatelessWidget {
                 itemCount: categories.length,
                 itemBuilder: (context, index) {
                   final category = categories[index];
-
                   return GestureDetector(
                     onTap: () {},
                     child: Container(

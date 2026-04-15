@@ -54,6 +54,7 @@ class HomeView extends StatelessWidget {
 
               /// Best Sellers
               BestSellersWidget(),
+              SizedBox(height: 16.h),
             ],
           ),
         ),
